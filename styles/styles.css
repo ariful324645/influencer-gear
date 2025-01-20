@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: #FFF;
+}
+header{
+    margin:87px 120px;
+    
+
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 700;
+}
+ul{
+    display: flex;
+    gap:34px;
+
+}
+ul>li{
+     list-style: none;
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 600; 
+
+
+
+}
+ul>li>a{
+    text-decoration: none;
+}
+/* banner */
+.banner-text{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 52px;
+font-weight: 700;
+margin-bottom: 16px;
+
+}
+.text-description{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 16px;
+margin-bottom: 16px;
+
+font-weight: 600;
+
+}
+.btn-primary{
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+border-radius: 41px;
+background: #E02C6D;
+padding:10px 24px;
+border:none;
+
+}
+.banner-container{
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../influencer-gear/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-bottom: 100px;
+}
+.banner-text{
+    display: flex;
+    align-items: center;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+   
+}
+.icon{
+    display: flex;
+    align-items: center; 
+    gap: 80px;
+    
+}
+.popular-text{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 28px;
+font-weight: 600;
+text-align: center;
+margin-bottom: 30px;
+margin-bottom: 20px;
+}
+/* card */
+.flex-text{
+color:#18191F;
+font-family: Poppins;
+font-size: 28px;
+font-weight: 500;
+margin-bottom: 12px;
+}
+.text-description1{
+    color: var(--Gray-50, #787885);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+gap:15px;
+
+}
+.popular-text{
+    color: #3A3A3A;
+
+    font-family: Poppins;
+    font-size: 28px;
+
+    font-weight: 600;
+    
+    margin-bottom: 20px;
+
+}
+.dollar{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+font-family: Inter;
+font-size: 24px;
+
+font-weight: 400;
+margin-bottom: 12px;
+}
+.checked{
+    color: #FB8200;
+}
+.card-section{
+    margin: 0px 197px;
+}
+.card{
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+padding:17px 15px 17px 14px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+
+@media screen and (max-width:576px) {
+    nav,ul{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        background-image: none;
+        
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+    .btn-primary{
+        padding: 0px;
+    }
+    header{
+        margin:30px 60px;
+        
+    
+    }
+    .card-section{
+        margin: 0px 100px;
+    }
+    .card{
+        padding:5px auto;
+    }
+   
+}
